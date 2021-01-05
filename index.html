@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/ligne.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Tablero de avisos</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="container-fluid">
+                <div class="panel">
+                    <div class="body">
+                        <div>
+                            <h3>Crear avisos</h3>
+                            
+                        </div>
+                        <form action="#" method="post" id="avisos-data">
+                            <div class="input-group">
+                                <div>
+                                    <label for="titulo">Avisos</label>
+                                    <input type="text" id="titulo" name="titulo" placeholder="Titulo del aviso"
+                                        required>
+                                </div>
+                                <div>
+                                    <label for="description">Avisos descripcion</label>
+                                    <div>
+                                        <textarea name="description" id="description" style="width:93%;"
+                                            rows="4" placeholder="Aviso descripcion maximo 400 caracteres" maxlength="400" required></textarea>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="contact">Contactos</label>
+                                    <input type="text" id="contact" name="contact" placeholder="contactos maximo 100 caracteres" maxlength="100"
+                                        required>
+                                </div>
+                                <div>
+                                    <label for="file" class="button primary small hollow">Agregar imagen</label>
+                                    <input type="file" id="file" class="picture" name="picture" accept="image/*" hidden>
+                                </div>
+                                
+                            </div>
+
+                            <div>
+                                <button class="button succes block" type="submit">Publicar Aviso</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="panel">
+                    <div class="container-fluid">
+                        <div class="body">
+                            <div>
+                                <h3>Tablero de Avisos</h3><hr>
+                            </div>
+                            <div id="tasks-container">
+    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script type="text/javascript" src="js/localforage.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+
+</html>
